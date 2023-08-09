@@ -46,15 +46,16 @@ const InstitutoFederal = (props) => {
 
 const App2 = () => {
   return(
-    <>
-      <InstitutoFederal sigla="IFAL" uf="AL" />
-      <Campus nome="Maceió" anoFundacao={1909} />
-      <Campus nome="Rio Largo" anoFundacao={2014} />
-      <Campus nome="Satuba" anoFundacao={1905} />
-      <InstitutoFederal sigla="IFPE" uf="PE" />
-      <Campus nome="Palmares" anoFundacao={2014} />
-      <Campus nome="Garanhuns" anoFundacao={2010} />
-    </>
+    <View style={styles.container}>
+      <Text style={styles.setFontSizeOne}><InstitutoFederal sigla="IFAL" uf="AL" /></Text>
+      <Text style={styles.setFontSizeOne}><Campus nome="Maceió" anoFundacao={1909} /></Text>
+      <Text style={styles.setFontSizeOne}><Campus nome="Rio Largo" anoFundacao={2014} /></Text>
+      <Text style={styles.setFontSizeOne}><Campus nome="Satuba" anoFundacao={1905} /></Text>
+      <Text style={styles.setFontSizeOne}><InstitutoFederal sigla="IFPE" uf="PE" /></Text>
+      <Text style={styles.setFontSizeOne}><Campus nome="Palmares" anoFundacao={2014} /></Text>
+      <Text style={styles.setFontSizeOne}><Campus nome="Garanhuns" anoFundacao={2010} /></Text>
+      <StatusBar style="auto"/>
+    </View>
   )
 }
 
@@ -65,6 +66,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  setFontSizeOne: {
+    fontSize: 17 
+  },
+
 });
 
 export default App2;
