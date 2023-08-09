@@ -16,6 +16,17 @@
 //   );
 // }
 
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#B0C4DE',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
+
+// export default App1;
+
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import {Text, StyleSheet, View} from "react-native";
@@ -35,7 +46,7 @@ const InstitutoFederal = (props) => {
 
 const App2 = () => {
   return(
-    <View style={style.container}>
+    <>
       <InstitutoFederal sigla="IFAL" uf="AL" />
       <Campus nome="Maceió" anoFundacao={1909} />
       <Campus nome="Rio Largo" anoFundacao={2014} />
@@ -43,13 +54,9 @@ const App2 = () => {
       <InstitutoFederal sigla="IFPE" uf="PE" />
       <Campus nome="Palmares" anoFundacao={2014} />
       <Campus nome="Garanhuns" anoFundacao={2010} />
-      <StatusBar style="auto"/>
-    </View>
+    </>
   )
 }
-
-export default App2;
-// export default App1;
 
 const styles = StyleSheet.create({
   container: {
@@ -59,3 +66,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App2;
+
+
+
